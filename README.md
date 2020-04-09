@@ -32,3 +32,39 @@ Once my Minimum Viable Product is satisfactory, I would like to explore possible
 Naturally, the data science pipeline / workflow is implemented, but I'm a bit 'old-school' and need to touch and feel my information.  I have printed out the necessary modules for my own reference, as well as whiteboarded all objectives, complete with Post-It notes of various colors to physically keep track of my progress.
 
 Most of the dataframe coding and visualizations have been done using Jupyter Notebooks, an awesome and easy-to-use (and nearly full-on) IDE.   Imports and this README file are rooted in VSCode.  In preparation for this Codeup course, I did all my work in either PyCharm or Kaggle, so when checking things in my VSCode, one may see some noob-like stylings.
+
+## Minimum Viable Product
+
+At the very least, we are to use our modeling to predict single-unit property values using only three factors: the number of bedrooms, the number of bathrooms, and the overall square footage.  From this spec, I will attempt to reject the following three null-hypotheses:
+
+**Number of Bedrooms**
+
+- $H_0$ - The number of bedrooms is not a driver of single-unit property values.
+
+- ($H_a$ - The number of bedrooms IS a driver of single-unit property values)
+
+**Number of Bathrooms**
+
+- $H_0$ - The number of bathrooms is not a driver of single-unit property values
+
+- ($H_a$ - The number of bathrooms IS a driver of single_unit properties)
+
+**Square Footage**
+
+- $H_0$ - Square footage does not drive single-unit property values
+
+- ($H_a$ - Square footage DOES INDEED drive singe-unit property values)
+
+
+## Glossary of Terms
+
+Several features in the provided data needed some clarification for me.  While not exhaustive, this is the segment in which I hope to keep track of their definitions:
+
+**fips number / code**
+- short for Federal Information Processing Standard
+- it's a unique identifier for US counties / county equivalents
+- composed of five numbers: first two are the state code, and the last three digits are the county code
+- our database lists them as four-number codes; this is due to the first number being the placeholder zero(0)
+(Source: https://en.wikipedia.org/wiki/FIPS_county_code)
+
+
