@@ -9,7 +9,7 @@ Also, because property taxes are assessed at the county level, I need to know wh
 ## Objectives:
 - Planning, acquiring, preparing, and exploring the data in the provided Zillow MySQL database to gain an understanding of which variables are independent from each other and which are not.
 
-- Model trial-and-error: modeling all these variables against and with each other to determine which factors have the heaviest weights in determining single-unit property values.
+- Model trial-and-error: modeling all these variables against and with each other to determine which factors have the heaviest weights in determining single-unit property values.  Being that there are multiple features and a single target (home value), multiple univariate regression modeling will be the focus of this portion.
 
 - From these efforts, create a Google Slide presentation of 3-5 slides clearly laying out the results of my findings to an audience of Data Scientists working for Zillow.  
 
