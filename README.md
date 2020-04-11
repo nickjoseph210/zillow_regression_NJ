@@ -31,7 +31,11 @@ Once my Minimum Viable Product is satisfactory, I would like to explore possible
 
 Naturally, the data science pipeline / workflow is implemented, but I'm a bit 'old-school' and need to touch and feel my information.  I have printed out the necessary modules for my own reference, as well as whiteboarded all objectives, complete with Post-It notes of various colors to physically keep track of my progress.
 
-Most of the dataframe coding and visualizations have been done using Jupyter Notebooks, an awesome and easy-to-use (and nearly full-on) IDE.   Imports and this README file are rooted in VSCode.  In preparation for this Codeup course, I did all my work in either PyCharm or Kaggle, so when checking things in my VSCode, one may see some noob-like stylings.
+Most of the dataframe coding and visualizations have been done using Jupyter Notebooks, an awesome and easy-to-use development environment, especially for people like me who tend to think out loud.  In the notebooks are comments that range from snippet to tome - the decision to keep them in there is to show my thinking process throughout each phase of the project.
+
+Imports and this README file are rooted in VSCode.  Previous python-ing had been performed in PyCharm in preparation for this course and Jupyter Notebooks during this course, so when perusing my code in VS, one may find some noob-like stylings. 
+
+But, hey: as long as the functions work, right?
 
 ## Minimum Viable Product
 
@@ -55,16 +59,9 @@ At the very least, we are to use our modeling to predict single-unit property va
 
 - ($H_a$ - Square footage DOES INDEED drive singe-unit property values)
 
+### Tending to null values in the dataset
 
-## Glossary of Terms
+Initial exploration of the data revealed some null values in the features 'square_feet' and 'tax_amount.'  It is not believed that these 25 values will have any significant affect on the projection of the remaining non-null variables (totaling 15,011), so these rows will be dropped altogether from our analysis.  
 
-Several features in the provided data needed some clarification for me.  While not exhaustive, this is the segment in which I hope to keep track of their definitions:
-
-**fips number / code**
-- short for Federal Information Processing Standard
-- it's a unique identifier for US counties / county equivalents
-- composed of five numbers: first two are the state code, and the last three digits are the county code
-- our database lists them as four-number codes; this is due to the first number being the placeholder zero(0)
-(Source: https://en.wikipedia.org/wiki/FIPS_county_code)
 
 
