@@ -63,5 +63,17 @@ At the very least, we are to use our modeling to predict single-unit property va
 
 Initial exploration of the data revealed some null values in the features 'square_feet' and 'tax_amount.'  It is not believed that these 25 values will have any significant affect on the projection of the remaining non-null variables (totaling 15,011), so these rows will be dropped altogether from our analysis.  
 
+# Glossary of Terms
 
+Several features in the provided data needed some clarification for me.  While not exhaustive, this is the segment in which I hope to keep track of their definitions:
 
+**fips number / code**
+- short for Federal Information Processing Standard
+- it's a unique identifier for US counties / county equivalents
+- composed of five numbers: first two are the state code, and the last three digits are the county code
+- our database lists them as four-number codes; this is due to the first number being the placeholder zero(0)
+(Source: https://en.wikipedia.org/wiki/FIPS_county_code)
+
+**Recursive Feature Elimination**
+
+A method of removing features of low importance to reduce model complexity and overfitting.  Not every feature (independent variable, or X value) is as important to the model as the next, and this method of 'feature herd thinning' iterates through the model, selecting the attributes that best predict the target variable (the y, or 'home_value', in this case).
